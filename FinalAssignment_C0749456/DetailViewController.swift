@@ -12,7 +12,6 @@ import CoreData
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var nameField: UITextField!
-    
     @IBOutlet weak var idField: UITextField!
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var descriptionField: UITextField!

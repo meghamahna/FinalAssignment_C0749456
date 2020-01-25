@@ -123,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="1852" y="115.59220389805098"/>
         </scene>
-        <!--View Controller-->
+        <!--Products View Controller-->
         <scene sceneID="nEj-x8-PEr">
             <objects>
-                <viewController id="QcG-vw-QFV" sceneMemberID="viewController">
+                <viewController id="QcG-vw-QFV" customClass="ProductsViewController" customModule="FinalAssignment_C0749456" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DPn-fb-RBg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,6 +188,12 @@
                         <viewLayoutGuide key="safeArea" id="V4O-rs-87B"/>
                     </view>
                     <navigationItem key="navigationItem" id="AfV-CQ-lIf"/>
+                    <connections>
+                        <outlet property="productDescription" destination="Hvj-cV-UTO" id="pYg-tK-5B4"/>
+                        <outlet property="productId" destination="qgd-e7-s2Y" id="peu-vH-9cl"/>
+                        <outlet property="productName" destination="k37-Zm-X9d" id="Qoe-jk-fMI"/>
+                        <outlet property="productPrice" destination="9ey-Un-Sdk" id="Kn9-dS-VCt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FdC-op-gFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

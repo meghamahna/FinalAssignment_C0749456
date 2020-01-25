@@ -11,10 +11,29 @@ import CoreData
 
 class ProductsViewController: UIViewController {
     
+    @IBOutlet weak var productName: UITextField!
+    
+    @IBOutlet weak var productId: UITextField!
+    
+    @IBOutlet weak var productPrice: UITextField!
+    
+    @IBOutlet weak var productDescription: UITextField!
+    
+    var textString1: String?
+    var textString2: String?
+    var textString3: String?
+    var textString4: String?
+    
+    weak var taskTable: ProductTableViewController?
+    
     //var products: [Product]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        productName.text = textString1
+         productId.text = textString2
+         productDescription.text = textString3
+         productPrice.text = textString4
 
         // Do any additional setup after loading the view.
     }

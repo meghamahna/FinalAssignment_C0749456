@@ -13,6 +13,8 @@ class ProductTableViewController: UITableViewController {
     
     var products: [Product]?
 
+    weak var delegate: ProductsViewController?
+    var curIndex = -1
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -261,5 +263,27 @@ class ProductTableViewController: UITableViewController {
     }
 
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+          // Get the new view controller using segue.destination.
+          // Pass the selected object to the new view controller.
+          
+          if let detailView = segue.destination as? ProductsViewController{
+              detailView.taskTable = self
+              //detailView.tasks = tasks
+              
+              if let tableViewCell = sender as? UITableViewCell{
+                  if let index = tableView.indexPath(for: tableViewCell)?.row{
+                    detailView.textString1 = products![index].productName
+                    detailView.textString2 = products![index].productId
+                    detailView.textString3 = products![index].productDescription
+                    detailView.textString4 = String(products![index].price)
+                      
+                      curIndex = index
+                  }
+              }
+              
+         }
+      
+      }
 
 }
