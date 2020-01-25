@@ -11,7 +11,9 @@ import CoreData
 
 class ProductTableViewController: UITableViewController {
     
+    @IBOutlet weak var searchBar: UISearchBar!
     var products: [Product]?
+    var filteredProducts: [Product]?
 
     weak var delegate: ProductsViewController?
     var curIndex = -1
@@ -20,6 +22,8 @@ class ProductTableViewController: UITableViewController {
 
         
         loadCoreData()
+        filteredProducts = products
+        searchBar.delegate = self
         saveCoreData()
         //NotificationCenter.default.addObserver(self, selector: #selector(saveCoreData), name: UIApplication.willResignActiveNotification, object: nil)
         // Uncomment the following line to preserve selection between presentations
@@ -41,13 +45,13 @@ class ProductTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return products?.count ?? 0
+        return filteredProducts?.count ?? 0
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let product = products![indexPath.row]
+        let product = filteredProducts![indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "productCell")
         cell?.textLabel?.text = product.productName
 
@@ -286,4 +290,16 @@ class ProductTableViewController: UITableViewController {
       
       }
 
+}
+
+extension ProductTableViewController: UISearchBarDelegate{
+
+func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    
+    filteredProducts = searchText.isEmpty ? products : products?.filter({ (item: Product) -> Bool in
+        return item.productName.range(of: searchText, options: .caseInsensitive) != nil
+    })
+    
+    tableView.reloadData()
+  }
 }
