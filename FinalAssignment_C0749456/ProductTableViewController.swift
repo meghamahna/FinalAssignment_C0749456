@@ -111,78 +111,78 @@ class ProductTableViewController: UITableViewController {
                       
                 let product1 = NSEntityDescription.insertNewObject(forEntityName: "ProductModel", into: context)
                       
-                product1.setValue("book", forKey: "name")
-                product1.setValue("ap1", forKey: "id")
-                product1.setValue("book for Data Structure", forKey: "descriptions")
-                product1.setValue(100, forKey: "price")
+                product1.setValue("Television", forKey: "name")
+                product1.setValue("ab1", forKey: "id")
+                product1.setValue("This is Tv", forKey: "descriptions")
+                product1.setValue(200, forKey: "price")
                
                
                 let product2 = NSEntityDescription.insertNewObject(forEntityName: "ProductModel", into: context)
                
-                product2.setValue("pen", forKey: "name")
-                product2.setValue("ap1", forKey: "id")
-                product2.setValue("pen", forKey: "descriptions")
-                       product2.setValue(100, forKey: "price")
+                product2.setValue("Washing Machine", forKey: "name")
+                product2.setValue("ab2", forKey: "id")
+                product2.setValue("This is Washing Machine", forKey: "descriptions")
+                       product2.setValue(210, forKey: "price")
         
                 let product3 = NSEntityDescription.insertNewObject(forEntityName: "ProductModel", into: context)
                                
-                product1.setValue("book", forKey: "name")
-                product1.setValue("ap1", forKey: "id")
-                product1.setValue("book for Data Structure", forKey: "descriptions")
-                product1.setValue(100, forKey: "price")
+                product3.setValue("Mixer", forKey: "name")
+                product3.setValue("ab3", forKey: "id")
+                product3.setValue("This is mixer", forKey: "descriptions")
+                product3.setValue(100, forKey: "price")
                         
                         
                 let product4 = NSEntityDescription.insertNewObject(forEntityName: "ProductModel", into: context)
                         
-                product2.setValue("pen", forKey: "name")
-                product2.setValue("ap1", forKey: "id")
-                product2.setValue("pen", forKey: "descriptions")
-                product2.setValue(100, forKey: "price")
+                product4.setValue("Vaccuum Cleaner", forKey: "name")
+                product4.setValue("ab4", forKey: "id")
+                product4.setValue("This is Vaccuum Cleaner", forKey: "descriptions")
+                product4.setValue(100, forKey: "price")
         
                 let product5 = NSEntityDescription.insertNewObject(forEntityName: "ProductModel", into: context)
                                       
-                product1.setValue("book", forKey: "name")
-                product1.setValue("ap1", forKey: "id")
-                product1.setValue("book for Data Structure", forKey: "descriptions")
-                product1.setValue(100, forKey: "price")
+                product5.setValue("Radio", forKey: "name")
+                product5.setValue("ab5", forKey: "id")
+                product5.setValue("This is Radio", forKey: "descriptions")
+                product5.setValue(150, forKey: "price")
                                
                                
                 let product6 = NSEntityDescription.insertNewObject(forEntityName: "ProductModel", into: context)
                                
-                product2.setValue("pen", forKey: "name")
-                product2.setValue("ap1", forKey: "id")
-                product2.setValue("pen", forKey: "descriptions")
-                product2.setValue(100, forKey: "price")
+                product6.setValue("Computer", forKey: "name")
+                product6.setValue("ab6", forKey: "id")
+                product6.setValue("This is Computer", forKey: "descriptions")
+                product6.setValue(2000, forKey: "price")
         
                 let product7 = NSEntityDescription.insertNewObject(forEntityName: "ProductModel", into: context)
                                       
-                product1.setValue("book", forKey: "name")
-                product1.setValue("ap1", forKey: "id")
-                product1.setValue("book for Data Structure", forKey: "descriptions")
-                product1.setValue(100, forKey: "price")
+                product7.setValue("Mouse", forKey: "name")
+                product7.setValue("ab7", forKey: "id")
+                product7.setValue("This is Mouse", forKey: "descriptions")
+                product7.setValue(80, forKey: "price")
                                
                                
                 let product8 = NSEntityDescription.insertNewObject(forEntityName: "ProductModel", into: context)
                                
-                product2.setValue("pen", forKey: "name")
-                product2.setValue("ap1", forKey: "id")
-                product2.setValue("pen", forKey: "descriptions")
-                product2.setValue(100, forKey: "price")
+                product8.setValue("Keyboard", forKey: "name")
+                product8.setValue("ab8", forKey: "id")
+                product8.setValue("This is Keyboard", forKey: "descriptions")
+                product8.setValue(70, forKey: "price")
         
                 let product9 = NSEntityDescription.insertNewObject(forEntityName: "ProductModel", into: context)
                
-               product1.setValue("book", forKey: "name")
-               product1.setValue("ap1", forKey: "id")
-               product1.setValue("book for Data Structure", forKey: "descriptions")
-               product1.setValue(100, forKey: "price")
+               product9.setValue("Ipad", forKey: "name")
+               product9.setValue("ab9", forKey: "id")
+               product9.setValue("This is Ipad", forKey: "descriptions")
+               product9.setValue(1500, forKey: "price")
         
         
                 let product10 = NSEntityDescription.insertNewObject(forEntityName: "ProductModel", into: context)
         
-                product2.setValue("pen", forKey: "name")
-                product2.setValue("ap1", forKey: "id")
-                product2.setValue("pen", forKey: "descriptions")
-                product2.setValue(100, forKey: "price")
+                product10.setValue("Mobile", forKey: "name")
+                product10.setValue("ab10", forKey: "id")
+                product10.setValue("This is Mobile", forKey: "descriptions")
+                product10.setValue(1800, forKey: "price")
                       
                       // 4th step: save context
                       
